@@ -2004,11 +2004,6 @@ Transform:
   - {fileID: 697524976}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &499633634 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4808141190870887394, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
-  m_PrefabInstance: {fileID: 5256937178712198540}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,14 +2574,6 @@ PrefabInstance:
       propertyPath: startPos
       value: 
       objectReference: {fileID: 2001560333}
-    - target: {fileID: 4808141190870887394, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 4808141190870887394, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.31
-      objectReference: {fileID: 0}
     - target: {fileID: 7173203411813442735, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.3888836
@@ -2632,13 +2619,9 @@ PrefabInstance:
       value: Guerreira
       objectReference: {fileID: 0}
     - target: {fileID: 8538228024188939576, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
-      propertyPath: raioAtaque
-      value: 0.47
+      propertyPath: layersAtaque.m_Bits
+      value: 64
       objectReference: {fileID: 0}
-    - target: {fileID: 8538228024188939576, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
-      propertyPath: pontoAtaque
-      value: 
-      objectReference: {fileID: 499633634}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

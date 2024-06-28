@@ -43,6 +43,15 @@ public class Character : MonoBehaviour
         }
 
         FlipSprite();
+
+        if (Input.GetKeyUp(KeyCode.C))
+        {
+            anim.SetBool("attack", true);
+        }
+        else if (!Input.GetKeyUp(KeyCode.C))
+        {
+            anim.SetBool("attack", false);
+        }
     }
 
     private void FixedUpdate()

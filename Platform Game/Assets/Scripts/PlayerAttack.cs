@@ -23,13 +23,13 @@ public class PlayerAttack : MonoBehaviour
     }
 
     // Desenhar coisas na Unity
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
         if (pontoAtaque != null)
         {
             Gizmos.DrawWireSphere(this.pontoAtaque.position, this.raioAtaque);
         }        
-    }
+    }*/
 
     private void Atacar()
     {
