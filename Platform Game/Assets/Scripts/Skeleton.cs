@@ -12,6 +12,10 @@ public class Skeleton : MonoBehaviour
     // Pegar o transform de um game object "GroundCheck"
     public Transform groundCheck;
 
+    // Vida
+    [SerializeField]
+    private int vidas;
+
     void Update()
     {
         // Movimentacao do inimigo
@@ -34,6 +38,16 @@ public class Skeleton : MonoBehaviour
                 transform.eulerAngles = new Vector3(0, 180, 0);
                 isRight = true;
             }
+        }
+    }
+
+    public void ReceberDano()
+    {
+        this.vidas--;
+        Debug.Log(this.name + " foi atacado. Vida: " + this.vidas);
+        if(this.vidas == 0)
+        {
+            GameObject.Destroy(this.gameObject);
         }
     }
 }

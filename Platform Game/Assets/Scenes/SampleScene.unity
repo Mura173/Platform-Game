@@ -2004,6 +2004,11 @@ Transform:
   - {fileID: 697524976}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &499633634 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4808141190870887394, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
+  m_PrefabInstance: {fileID: 5256937178712198540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2306,51 +2311,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &867804364 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7764314401069851535, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
-  m_PrefabInstance: {fileID: 5256937178712198540}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1065481798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7173203411813442735, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
   m_PrefabInstance: {fileID: 5256937178712198540}
   m_PrefabAsset: {fileID: 0}
---- !u!70 &1065481804
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867804364}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.28761744, y: -0.23379397}
-  m_Size: {x: 0.94001913, y: 1.3809409}
-  m_Direction: 0
 --- !u!1 &1381991953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2365,7 +2330,7 @@ GameObject:
   - component: {fileID: 1381991954}
   - component: {fileID: 1381991959}
   - component: {fileID: 1381991960}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Esqueleto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2398,7 +2363,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &1381991956
 Animator:
   serializedVersion: 5
@@ -2482,7 +2447,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.7782884, y: -3.083, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 201392097}
@@ -2567,9 +2532,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d871b28e03a3241b3ae4a862775c72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0
   distance: 1
   groundCheck: {fileID: 201392097}
+  vidas: 3
 --- !u!1 &2001560332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,17 +2575,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 503389007802058089, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
-      propertyPath: m_SortingOrder
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 3348094629488267641, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
       propertyPath: startPos
       value: 
       objectReference: {fileID: 2001560333}
-    - target: {fileID: 6594020537509807021, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
-      propertyPath: m_Constraints
-      value: 4
+    - target: {fileID: 4808141190870887394, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808141190870887394, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.31
       objectReference: {fileID: 0}
     - target: {fileID: 7173203411813442735, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2665,14 +2631,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guerreira
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1989374736376227483, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
+    - target: {fileID: 8538228024188939576, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
+      propertyPath: raioAtaque
+      value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538228024188939576, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
+      propertyPath: pontoAtaque
+      value: 
+      objectReference: {fileID: 499633634}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7764314401069851535, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1065481804}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
