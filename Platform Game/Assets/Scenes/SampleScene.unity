@@ -205,7 +205,7 @@ Transform:
   m_GameObject: {fileID: 201392096}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.723, y: -0.91, z: 5.3233137}
+  m_LocalPosition: {x: 0.621, y: -0.91, z: 5.3233137}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2531,6 +2531,7 @@ MonoBehaviour:
   distance: 1
   groundCheck: {fileID: 201392097}
   vidas: 3
+  animSkeleton: {fileID: 1381991956}
 --- !u!1 &2001560332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,6 +2575,14 @@ PrefabInstance:
       propertyPath: startPos
       value: 
       objectReference: {fileID: 2001560333}
+    - target: {fileID: 4808141190870887394, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808141190870887394, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7173203411813442735, guid: 1a2d6a3935c96cd4583ba97788466225, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.3888836

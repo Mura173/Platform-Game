@@ -38,7 +38,6 @@ public class PlayerAttack : MonoBehaviour
 
         if (colliderInimigo != null)
         {
-            Debug.Log("Atacando objeto" + colliderInimigo.name);
 
             // Causar dano no inimigo
             Skeleton inimigo = colliderInimigo.GetComponent<Skeleton>();

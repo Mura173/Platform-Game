@@ -16,6 +16,14 @@ public class Skeleton : MonoBehaviour
     [SerializeField]
     private int vidas;
 
+    // Animator
+    public Animator animSkeleton;
+
+    void Start()
+    {
+       animSkeleton = GetComponent<Animator>();
+    }
+
     void Update()
     {
         // Movimentacao do inimigo
@@ -39,13 +47,19 @@ public class Skeleton : MonoBehaviour
                 isRight = true;
             }
         }
+
+        if(speed > 0)
+        {
+            animSkeleton.SetBool("idle", false);
+            animSkeleton.SetBool("andar", true);
+        }
     }
 
     public void ReceberDano()
     {
         this.vidas--;
-        Debug.Log(this.name + " foi atacado. Vida: " + this.vidas);
-        if(this.vidas == 0)
+
+        if (this.vidas == 0)
         {
             GameObject.Destroy(this.gameObject);
         }
